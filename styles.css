@@ -1,0 +1,435 @@
+/*general styling*/
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 4rem;
+}
+body {
+    background: #fff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Poppins", serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+
+header {
+    background-color: #ff3c4b;
+    position: fixed;
+    top: 0;                                   
+    width: 100%;
+    padding-top: 2px;
+    z-index: 10;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#navDiv {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+.headerLi {
+    font-family: "Poppins", serif;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 0px 15px 0px 15px;
+}
+ul {
+    padding: 0;
+}
+.headerLi a{
+    text-decoration: none;
+    color: #010101;
+    position: relative;
+}
+.headerLi a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px; 
+    height: 2px;
+    background-color: #010101;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+
+.headerLi a:hover::after {
+    transform: scaleX(1);
+}
+
+.headerLi a.active::after {
+    transform: scaleX(1); /* Keep underline visible for the active link */
+}
+
+.headerLi a.active {
+    font-weight: bold; /* Optional: Make active link stand out */
+}
+
+
+
+/*footer*/
+
+footer {
+    background: linear-gradient(to top, #ff3c4b 20%, #fff 90%);
+    margin-top: auto;
+    text-align: center;
+    color: #010101;
+}
+#footerDiv {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    text-align: left;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #010101;
+}
+.footerLabel {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+#footerTitle {
+    font-size: 2.6em;
+    font-weight: 600;
+}
+#footerLabelContainer {
+    display: flex;
+    margin-top: 2em;
+}
+#footerFirst, #footerSecond, #footerThird {
+    width: 33%;
+    font-size: 1em;
+}
+#footerSecond {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Footer Socials Container */
+
+#footerSocials {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    margin-top: 1.2em;
+    justify-content: center;
+    gap: 2.5em; /* Space between icons */
+}
+
+/* Social Media Icons */
+.footerSocialsIcon {
+    height: 2.5em;
+    border-radius: 25px;
+    transition: transform 0.4s ease, filter 0.9s ease;
+}
+.footerSocialsIcon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
+#designer {
+    color: #010101;
+}
+
+/*home introduction*/
+#homeIntroduction {
+    background: linear-gradient(to bottom, #ff3c4b 10%, #fff 60%);
+    padding-top: 5em;
+    padding-bottom: 3em;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+#homeIntroContainer {
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+#IntroName {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#IntroImage {
+    width: 40%; /* Restrict width for responsiveness */
+    padding-left: 1em;
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    position: relative;
+}
+#introDesc {
+    font-size: 1.5em;
+    margin-top: 0.2em;
+}
+#keith {
+    object-fit: cover;
+    border-radius: 20px;
+    height: 37em;
+    max-width: 100%; /* Make sure image resizes within container */
+}
+#name {
+    margin: 0;
+    font-size: 5em;
+    font-weight: 400;
+    line-height: 1.1;
+    border-bottom: 1px solid #010101;
+}
+#aboutMeParent {
+    background: linear-gradient(to bottom, #ff3c4b 10%, #fff 60%);
+    
+}
+#aboutMeContainer {
+    padding-top: 5em;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    
+    padding-bottom: 5em;
+}
+#aboutMeImage {
+    width: 40%;
+    padding-right: 1em;
+    display: flex;
+    justify-content: flex-start; /* Align image to the right */
+    position: relative;
+}
+#aboutMeImage2 {
+    width: 40%;
+    padding-right: 1em;
+    display: flex;
+    justify-content: flex-start; /* Align image to the right */
+    position: relative;
+}
+#aboutMeDescription {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#keith2 {
+    object-fit: cover;
+    border-radius: 20px;
+    height: 37em;
+    width: 26em;
+    max-width: 100%;
+}
+#keith3 {
+    object-fit: cover;
+    border-radius: 20px;
+    height: 37em;
+    width: 26em;
+    max-width: 100%;
+}
+#aboutMeTitle {
+    margin: 0;
+    font-size: 5em;
+}
+#aboutMeP {
+    font-size: 1.2em;
+}
+#aboutMeIntroduction {
+    padding-top: 5em;
+    padding-bottom: 3em;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+#checkJournal {
+    margin-left: auto; /* Push the "About Me" section to the right */
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+#checkJournal a {
+    color: #010101;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+#checkJournal a:hover {
+    color: #ff3c4b; /* Change color on hover */
+}
+/*home content*/
+
+#homeFiveC {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10em;
+}
+#fiveCTitle {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+}
+#fiveCTitleDesc {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.fiveC {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+.fiveCDesc {
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+}
+
+/*journal*/
+#journalTitle {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+#journalPage {
+    background-color: #f0f0f0;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+#journalContainer {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    gap: 10px; /* Maintain consistent spacing between cards */
+    margin: auto;
+}
+
+.card {
+    flex: 1 1 0; /* Allow cards to grow and shrink equally */
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden; /* Ensure contents are clipped */
+    transition: flex-grow 0.5s ease, transform 0.5s ease;
+    cursor: pointer; /* Interactivity cue */
+}
+
+.card:hover {
+    flex-grow: 3; /* Expand the hovered card */
+    transform: scale(1.02); /* Optional slight scaling for better effect */
+}
+
+.card-content {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom */
+    left: 10px;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Text visibility */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-content .title {
+    margin: 0;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover .card-content .title {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fit the card */
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    border-radius: 20px;
+    z-index: 2;
+    transition: background 0.5s ease;
+}
+
+.card:hover .backdrop {
+    background: rgba(0, 0, 0, 0); /* Darken the overlay on hover */
+}
+
+/*content*/
+.contentParent {
+    background: linear-gradient(to bottom, #ff3c4b 5%, #fff 17%);
+    padding-top: 5em;
+    padding-bottom: 10em;
+}
+.contentHeading {
+    font-size: 4em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.contentDesc {
+    font-size: 1.2em;
+}
+.contentContainer {
+    min-height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropDownParent {
+    margin-top: 2em;
+    border-radius: 20px; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contentDropDown {
+    max-width: 100%;
+    margin-top: 2rem;
+    padding: 1em;
+    border-bottom: 1px solid #010101;
+    cursor: pointer;
+}
+.entryTitleDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.entryContentDiv {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.entryTitle {
+    margin-top: 0;
+    font-size: 1.8rem;
+    max-width: 90%;
+}
+.entryContent {
+    margin-top: 0;
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+.contentDropDown:last-child {
+    border-bottom: none; /* Removes the bottom border for the last dropdown */
+}
+.contentDropDown.active svg {
+    transform: rotate(180deg);
+}
+svg {
+    transition: transform 0.5s ease;
+}
