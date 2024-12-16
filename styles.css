@@ -32,7 +32,7 @@ header {
 }
 .headerLi {
     font-family: "Poppins", serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     display: inline-block;
     padding: 0px 15px 0px 15px;
 }
@@ -90,19 +90,19 @@ footer {
 }
 .footerLabel {
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 #footerTitle {
-    font-size: 2.6em;
+    font-size: 2.6rem;
     font-weight: 600;
 }
 #footerLabelContainer {
     display: flex;
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 #footerFirst, #footerSecond, #footerThird {
     width: 33%;
-    font-size: 1em;
+    font-size: 1rem;
 }
 #footerSecond {
     margin-left: 10px;
@@ -115,14 +115,14 @@ footer {
     width: 30%;
     display: flex;
     margin: auto;
-    margin-top: 1.2em;
+    margin-top: 1.2rem;
     justify-content: center;
     gap: 2.5em; /* Space between icons */
 }
 
 /* Social Media Icons */
 .footerSocialsIcon {
-    height: 2.5em;
+    height: 2.5rem;
     border-radius: 25px;
     transition: transform 0.4s ease, filter 0.9s ease;
 }
@@ -137,7 +137,7 @@ footer {
 /*home introduction*/
 #homeIntroduction {
     background: linear-gradient(to bottom, #ff3c4b 10%, #fff 60%);
-    padding-top: 5em;
+    padding-top: 5rem;
     padding-bottom: 3em;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
 }
@@ -165,12 +165,12 @@ footer {
 #keith {
     object-fit: cover;
     border-radius: 20px;
-    height: 37em;
+    height: 37rem;
     max-width: 100%; /* Make sure image resizes within container */
 }
 #name {
     margin: 0;
-    font-size: 5em;
+    font-size: 5rem;
     font-weight: 400;
     line-height: 1.1;
     border-bottom: 1px solid #010101;
@@ -180,7 +180,7 @@ footer {
     
 }
 #aboutMeContainer {
-    padding-top: 5em;
+    padding-top: 5rem;
     width: 60%;
     margin: auto;
     display: flex;
@@ -415,14 +415,21 @@ footer {
 }
 .entryTitle {
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     max-width: 90%;
+}
+.entryContentHeading {
+    font-weight: 500;
 }
 .entryContent {
     margin-top: 0;
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 1.2em;
+    font-size: 1rem;
+}
+.entryContentImage {
+    height: 20rem;
+    border-radius: 15px;
 }
 .contentDropDown:last-child {
     border-bottom: none; /* Removes the bottom border for the last dropdown */
